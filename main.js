@@ -1,6 +1,6 @@
 var bubbles = [];
 var n = -1;
-var i, j = 0;
+var i, j, itemA, itemB = 0;
 
 //This code gets run only once
 function setup() {
@@ -44,8 +44,8 @@ function generateBubbles() {
 //Please note... these weird if statements are just for loops that have been
 //broken up so that one step occurs each animation cycle
 function sortBubbles() {
-    var itemA = 0;
-    var itemB = 0;
+    itemA = 0;
+    itemB = 0;
     if (i < n) {
         if (j < (n - i - 1)) {
             //Values for graphical output
